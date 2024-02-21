@@ -38,10 +38,10 @@ function descriptografar() {
     .replace(/ufat/gi, "u");
 
     if (texto.length != 0) {
-        if (verificarTexto(textoDescriptografado)) {
+        if (verificarTexto(texto)) {
                 alert("NÃO digitar letras maiúsculas nem caracteres especiais.")
         } else {
-            document.getElementById("saida").innerText = texto;
+            document.getElementById("saida").innerText = textoDescriptografado;
         }
         
     } 
