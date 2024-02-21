@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>DECODIFICADOR DE TEXTOS</h1>
+    </header>
+
+    <main class="container-principal">
+
+        <section class="container-input">
+            <section class="textarea">
+                <textarea id="textarea-texto" placeholder="Digite o seu texto"></textarea>
+                <p>* Apenas letras minúsculas e sem caracteres especiais.</p>
+                <div class="botoes">
+                    <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                    <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+                </div>
+            </section>
+        </section>
+
+        <section class="div-output">
+            <div class="output" id="output">
+                <div id="saida">
+                    <img src="imagens/pngegg.png" alt="imagem de estudo" id="imagem-saida">
+                    <h2 id="titulo-saida">Sua mensagem aparecerá aqui!</h2>
+                    <span id="texto-saida">Digite um texto que deseja criptografar ou descriptografar.</span>
+                </div>
+            </div>
+            <div class="div-btncopiar">
+                <button onclick="copiarTexto()" id="botao-copiar" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    
+    
+
+    
+
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <h3>Desenvolvido por Geraldo Alves - 2024</h3>
+            <a href="https://www.instagram.com/geraldoalves222/"  target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/geraldo-alves-sjunior/"  target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://github.com/GeraldoAlves1" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            
+        </div>
+    </footer>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

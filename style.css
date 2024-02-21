@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kode+Mono:wght@400..700&display=swap');
+
+
+:root {
+    --cor-principal: #070F2B;
+    --cor-secundaria: #1B1A55;
+    --cor-terciaria: #1B1A55;
+    --cor-quaternaria: #F39422;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    font-size: 3.75rem;
+    color: var(--cor-quaternaria);
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-input .textarea p{
+    margin-top: 1%;
+    color: var(--cor-quaternaria);
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+#textarea-texto {
+    width: 34.4rem;
+    height: 28.2rem;
+    font-size: 1.25rem;
+    color: var(--cor-quaternaria);
+    background: transparent;
+    border: 2px solid var(--cor-quaternaria);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botoes button {
+    border: 2px solid var(--cor-quaternaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-quaternaria);
+    padding: 3% 5% 3% 5%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    border: 2px solid var(--cor-terciaria);
+    transition: 0.5s all;
+    color: var(--cor-principal);
+    background-color: var(--cor-quaternaria);
+}
+
+
+.output {
+    display: flex;
+    flex-direction: column;
+    width: 34.4rem;
+    height: 28.2rem;
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 20px;
+    padding: 15px;
+    color: var(--cor-quaternaria);
+    font-size: 20px
+    
+}
+
+.output h2 {
+    font-size: 1.5rem;
+    color: var(--cor-quaternaria);
+    margin-left: 20%;
+}
+
+.output span {
+    font-size: 1rem;
+    color: var(--cor-quaternaria);
+    margin-left: 16%;
+}
+
+.output img {
+    max-width: 22rem;
+    width: auto;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 20%;
+}
+
+.div-btncopiar {
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-quaternaria);
+    background-color: var(--cor-terciaria);
+    width: 150px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    border: 2px solid var(--cor-terciaria);
+    transition: 0.5s all;
+    color: var(--cor-principal);
+    background-color: var(--cor-quaternaria);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    padding: 2%;
+    margin-top: auto;
+    background: var(--cor-quaternaria);
+    color: var(--cor-principal);
+}
+
+.rodape h3 {
+    font-size: 1rem;
+}
+
+.icons ion-icon {
+    padding-top: 3%;
+    padding-left: 15%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--cor-principal);
+}
+
+.icons ion-icon:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1230px) {
+
+
+    .cabecalho h1 {
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textarea-texto {
+        width: 500px;
+        height: 450px;
+        
+    }
+
+    .botoes button {
+        margin-top: 3%;
+    }
+
+    .div-output {
+        align-items: center;
+    }
+
+    .output {
+        margin-top: 10%;
+        width: 500px;
+        height: 450px;
+    }
+    
+    #saida img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .div-btncopiar {
+        margin-top: 3%;
+        margin-left: 38%;
+        margin-bottom: 10%;
+    }
+
+    #botao-copiar {
+        width: 130px;
+        height: 50px;
+    }
+}
+
+
+
+
+
+@media (max-width: 620px) {
+
+    .cabecalho h1 {
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #textarea-texto {
+        width: 300px;
+        height: 250px;
+        
+    }
+
+    .container-input .textarea p{
+        font-size: 0.75rem;
+    }
+
+    .botoes button {
+        margin-top: 3%;
+    }
+
+    .div-output {
+        align-items: center;
+    }
+
+    .output {
+        margin-top: 10%;
+        width: 300px;
+        height: 250px;
+    }
+    
+    #saida img {
+        margin-top: 10%;
+        margin-left: 30%;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .output h2 {
+        font-size: 1rem;
+        margin-top: 3%;
+        margin-left: 15%;
+    }
+    
+    .output span {
+        font-size: 0.75rem;
+        margin-left: 3%;
+    }
+
+    .div-btncopiar {
+        margin-top: 3%;
+        margin-left: 35%;
+        margin-bottom: 10%;
+    }
+
+    #botao-copiar {
+        width: 100px;
+        height: 40px;
+    }
+    
+}
